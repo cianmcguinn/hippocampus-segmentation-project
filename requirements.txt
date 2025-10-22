@@ -1,0 +1,9 @@
+torch
+torchvision
+segmentation-models-pytorch
+scikit-learn
+nibabel
+SimpleITK
+pandas
+matplotlib
+Pillow

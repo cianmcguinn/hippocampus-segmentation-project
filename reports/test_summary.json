@@ -1,0 +1,7 @@
+{
+  "dice_mean": 0.726242674772567,
+  "dice_std": 0.03763053516919237,
+  "iou_mean": 0.5715143249895812,
+  "iou_std": 0.045972553160190444,
+  "checkpoint": "baseline_unet_best.pth"
+}

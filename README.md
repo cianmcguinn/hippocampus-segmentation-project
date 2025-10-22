@@ -1,10 +1,14 @@
 # 3D MRI Hippocampus Segmentation (2D U-Net Case Study)
 
-> **Quick view:** open the HTML case study → **[project.html](./project.html)**
-
 This repository demonstrates a **lightweight, reproducible deep learning pipeline** for segmenting the **anterior** and **posterior** hippocampus from **3D T1-weighted MRI** volumes using a **2D U-Net** with a **MobileNetV3-Small encoder**.
 
 The project forms part of the author’s MSc Health Data Science coursework at **UCL**, developed for the module *Advanced Machine Learning in Healthcare (CHME0035)*.
+
+---
+- 🌐 **HTML case study**:
+  - Direct (relative): [project.html](project.html)
+  - One-click viewer (recommended if browsing on GitHub):  
+    https://htmlpreview.github.io/?https://raw.githubusercontent.com/cianmcguinn/hippocampus-segmentation-project/main/project.html
 
 ---
 

@@ -28,19 +28,29 @@ This project automates the process using a compact, transfer-learning-based CNN 
 
 ```
 .
-├── src/                      # modular helper modules
-│   ├── data_io.py            # data loading, preprocessing, augmentation
-│   ├── train.py              # training loop, loss, and model definition
-│   ├── metrics.py            # Dice/IoU metrics, confusion matrix
-│   ├── config.py             # centralised configuration (seed, paths, params)
-│   └── viz/                  # visualisation utilities (curves, overlays)
+├── src/ # Modular helper modules
+│ ├── config.py # Centralised configuration (seed, paths, params)
+│ ├── data_io.py # Data loading, preprocessing, augmentation
+│ ├── metrics.py # Dice/IoU metrics and confusion matrix utilities
+│ ├── train.py # Training loop, model creation, and loss functions
+│ └── viz/ # Visualisation helpers (curves, overlays, plots)
 │
-├── artifacts/                # saved figures, overlays, and reports (ignored if large)
-├── 3DMRI_hippocampus_segmentation.ipynb   # modular Jupyter notebook
-├── project.html              # concise recruiter-friendly case study
-├── requirements.txt          # dependencies
-├── .gitignore
-└── README.md
+├── reports/ # Lightweight outputs and evaluation artefacts
+│ ├── configs/
+│ │ └── baseline_unet_best_config.json # Saved best model configuration
+│ ├── figures/ # Key result visualisations
+│ │ ├── train_val_loss_curve.png
+│ │ ├── test_confusion_matrix.png
+│ │ ├── overlays_best_worst.png
+│ │ └── sample_slices.png
+│ ├── test_confusion_matrix.txt
+│ └── test_summary.json
+│
+├── 3DMRI_hippocampus_segmentation.ipynb # Main modular Jupyter notebook
+├── project.html # Recruiter-friendly case study (HTML version)
+├── requirements.txt # Python dependencies
+├── .gitignore # Ignore large or auto-generated files (artifacts, caches)
+└── README.md # Project overview and documentation
 ```
 
 ---
@@ -54,6 +64,16 @@ This project automates the process using a compact, transfer-learning-based CNN 
 
 Confusion analysis shows most residual misclassifications occur between anterior and posterior hippocampal regions — anatomically plausible given their proximity.  
 Qualitative overlays confirm shape and continuity preservation across slices.
+
+---
+
+### **Training and Evaluation Visuals**
+
+**Model convergence:**  
+![Training and Validation Loss Curve](reports/figures/train_val_loss_curve.png)
+
+**Segmentation examples (best vs worst case):**  
+![Predicted vs Ground Truth Overlays](reports/figures/overlays_best_worst.png)
 
 ---
 
